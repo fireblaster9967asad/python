@@ -1,0 +1,16 @@
+# Simple nested conditional for age classification
+age = int(input("Enter your age: "))
+
+if age >= 0:  # Outer condition - valid age
+    if age < 13:  # Inner condition 1
+        print("Child: 0-12 years")
+    else:
+        if age < 20:  # Inner condition 2
+            print("Teenager: 13-19 years")
+        else:
+            if age < 65:  # Inner condition 3
+                print("Adult: 20-64 years")
+            else:
+                print("Senior: 65+ years")
+else:
+    print("Invalid age! Age cannot be negative.")
