@@ -1,16 +1,15 @@
-# Simple nested conditional for age classification
-age = int(input("Enter your age: "))
+# Basic Power Calculator
+print("=" * 40)
+print("     SIMPLE POWER CALCULATOR")
+print("=" * 40)
 
-if age >= 0:  # Outer condition - valid age
-    if age < 13:  # Inner condition 1
-        print("Child: 0-12 years")
-    else:
-        if age < 20:  # Inner condition 2
-            print("Teenager: 13-19 years")
-        else:
-            if age < 65:  # Inner condition 3
-                print("Adult: 20-64 years")
-            else:
-                print("Senior: 65+ years")
-else:
-    print("Invalid age! Age cannot be negative.")
+# Get inputs from user
+base = float(input("Enter the base number: "))
+exponent = int(input("Enter the exponent (power): "))
+
+# Calculate power
+result = base ** exponent
+
+# Display result
+print(f"\n{base} raised to the power {exponent} = {result}")
+print(f"Calculation: {base}^{exponent} = {result}")
